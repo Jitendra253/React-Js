@@ -1,0 +1,33 @@
+{
+  "name": "react-js",
+  "version": "1.0.0",
+  "description": "React js fundamentals",
+  "keywords": [
+    "React",
+    "js"
+  ],
+  "homepage": "https://github.com/Jitendra253/React-Js#readme",
+  "bugs": {
+    "url": "https://github.com/Jitendra253/React-Js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jitendra253/React-Js.git"
+  },
+  "license": "ISC",
+  "author": "jitendra mahali",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
