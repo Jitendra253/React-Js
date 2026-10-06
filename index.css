@@ -1,3 +1,312 @@
-#heading{
-    color: red;
+/* =========================
+   Global
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 60px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.logo-container img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+.nav-item ul {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+
+  list-style: none;
+}
+
+.nav-item li {
+  font-size: 17px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.nav-item li:hover {
+  color: #ff4d2d;
+}
+
+
+/* =========================
+   Body
+========================= */
+
+.body {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px;
+}
+
+
+/* =========================
+   Search
+========================= */
+
+.search {
+  width: 100%;
+
+  padding: 18px 20px;
+
+  margin-bottom: 30px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  color: #777;
+
+  font-size: 16px;
+
+  cursor: text;
+}
+
+
+/* =========================
+   Restaurant Container
+========================= */
+
+/* Restaurant Container */
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+
+/* Restaurant Card */
+
+.res-card {
+  width: 280px;
+
+  background-color: #fff;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.res-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Restaurant Image */
+
+.res-logo {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* Restaurant Details */
+
+.res-details {
+  padding: 15px;
+  padding-left: 0;
+}
+
+
+/* Restaurant Name */
+
+.res-details h3 {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+
+  color: #222;
+}
+
+
+/* Rating */
+
+.rating {
+  display: inline-block;
+
+  padding: 4px 8px;
+
+  margin-bottom: 8px;
+
+  border-radius: 6px;
+
+  background-color: #267e3e;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+.rating span {
+  margin-right: 3px;
+}
+
+
+/* Cuisine */
+
+.cuisine {
+  margin-bottom: 8px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 20px;
+}
+
+
+/* Price */
+
+.price {
+  margin-bottom: 8px;
+
+  color: #444;
+
+  font-size: 14px;
+}
+
+
+/* Delivery */
+
+.delivery {
+  color: #555;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+/* =========================
+   Restaurant Card
+========================= */
+
+.res-card {
+  width: 250px;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+.res-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.res-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.res-card h3 {
+  font-size: 20px;
+
+  margin-bottom: 10px;
+
+  color: #333;
+}
+
+
+.search {
+  margin-bottom: 30px;
+}
+
+.search input {
+  width: 100%;
+  padding: 15px 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #ff4d2d;
+}
+
+.filter-btn{
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(57, 177, 38);
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
