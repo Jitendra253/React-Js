@@ -19,17 +19,25 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start":"parcel index.html",
-    "build":"parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "parcel": "^2.16.4"
   },
   "dependencies": {
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "react-router": "^7.18.4",
+    "react-router-dom": "^6.30.6"
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "@swc/core@1.16.13": true,
+    "lmdb@2.8.5": true,
+    "msgpackr-extract@3.0.4": true
+  }
 }

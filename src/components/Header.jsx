@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 export const Header = () => {
   const [isLoggedName, setIsloggedIn] = useState(false)
   return (
@@ -13,9 +14,15 @@ export const Header = () => {
       </div>
       <div className="nav-item">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li>
+            <NavLink className={({ isActive }) => isActive ? "active" : ""} to="/"> Home</NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => isActive ? "active" : ""} to="/about"> About Us</NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => isActive ? "active" : ""} to="/contact"> Contact Us</NavLink>
+          </li>
           <li>Cart</li>
           <button className="login-btn" onClick={() => setIsloggedIn(prev => !prev)}>{isLoggedName ? "Logout" : "LogIn"}</button>
         </ul>
