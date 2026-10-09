@@ -94,21 +94,11 @@ body {
 
 .search {
   width: 100%;
-
-  padding: 18px 20px;
-
-  margin-bottom: 30px;
-
   background-color: #ffffff;
-
   border: 1px solid #ddd;
-
   border-radius: 10px;
-
   color: #777;
-
   font-size: 16px;
-
   cursor: text;
 }
 
@@ -282,9 +272,9 @@ body {
   color: #333;
 }
 
-
-.search {
-  margin-bottom: 30px;
+.filter{
+  display: flex;
+  gap:20px
 }
 
 .search input {
@@ -308,5 +298,70 @@ body {
   cursor: pointer;
   border: 1px solid rgb(57, 177, 38);
   border-radius: 12px;
-  margin-bottom: 10px;
+}
+.shimmer-container{
+  display: flex;
+}
+.shimmer-card{
+  width: 200px;
+  height: 400px;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+.login-btn{
+  padding: 0 20px;
+  cursor: pointer;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff5200;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #e64a00;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchBox {
+  width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.searchBox:focus {
+  border-color: #ff5200;
+}
+
+.search-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #222;
 }
