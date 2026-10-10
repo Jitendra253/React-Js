@@ -1,0 +1,110 @@
+
+/* Main container */
+.menu {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #282c3f;
+}
+
+/* Restaurant details */
+.menu > h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.menu > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #686b78;
+  margin: 8px 0;
+}
+
+/* Menu category */
+.menu-category {
+  margin-top: 30px;
+}
+
+.menu-category > h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e9e9eb;
+}
+
+/* Individual dish */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid #e9e9eb;
+}
+
+/* Dish information */
+.dish-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.dish-details h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.dish-price {
+  font-size: 15px;
+  font-weight: 500;
+  color: #282c3f;
+  margin: 0 0 10px;
+}
+
+.dish-description {
+  font-size: 14px;
+  color: #93959f;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Dish image */
+.dish-image {
+  width: 130px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .menu {
+    margin: 15px auto;
+    padding: 16px;
+  }
+
+  .menu > h1 {
+    font-size: 25px;
+  }
+
+  .menu-item {
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  .dish-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .dish-details h4 {
+    font-size: 15px;
+  }
+
+  .dish-description {
+    font-size: 12px;
+  }
+}

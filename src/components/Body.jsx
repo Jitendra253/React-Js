@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
-// import { restaurants } from "../utils/mockData";
 import { ReturantCard } from "./ReturantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 export const Body = () => {
   const [restaurantList, setRestaurantList] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  // const restaurantList =
-  //   restaurants?.data?.cards?.find((card) =>card?.card?.card?.id === "restaurant_grid_listing_v2")?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
   useEffect(() => {
     fetchData();
   }, [])
@@ -53,10 +51,11 @@ export const Body = () => {
 
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => (
-          <ReturantCard
-            key={restaurant.info.id}
-            item={restaurant.info}
-          />
+          <Link key={restaurant.info.id} to={`/restaurant/${restaurant.info.id}`} className="restaurant-link">
+            <ReturantCard
+              item={restaurant.info}
+            />
+          </Link>
         ))}
       </div>
     </div>

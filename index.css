@@ -373,3 +373,9 @@ body {
   text-decoration: none;
   color: black;
 }
+
+
+.restaurant-link {
+  text-decoration: none;
+  color: inherit;
+}

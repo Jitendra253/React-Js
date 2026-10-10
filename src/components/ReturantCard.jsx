@@ -1,5 +1,6 @@
 import React from "react";
 import { CDN_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 export const ReturantCard = ({ item }) => {
   const imageUrl = `${CDN_URL}/${item.cloudinaryImageId}`;
@@ -32,5 +33,6 @@ export const ReturantCard = ({ item }) => {
         </p>
       </div>
     </div>
+
   );
 };
