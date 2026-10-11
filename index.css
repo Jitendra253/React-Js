@@ -379,3 +379,10 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+
+/* css for usercard */
+.user-card{
+  padding: 10px;
+  border: 1px solid green;
+}
