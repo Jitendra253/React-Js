@@ -30,6 +30,9 @@ export const Header = () => {
           <li>
             <NavLink className={({ isActive }) => isActive ? "active" : ""} to="/contact"> Contact Us</NavLink>
           </li>
+          <li>
+            <NavLink className={({ isActive }) => isActive ? "active" : ""} to="/grocery"> Grocery</NavLink>
+          </li>
           <li>Cart</li>
           <button className="login-btn" onClick={() => setIsloggedIn(prev => !prev)}>{isLoggedName ? "Logout" : "LogIn"}</button>
         </ul>
