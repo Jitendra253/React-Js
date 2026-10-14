@@ -7,7 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestarurantMenu from "./components/RestaurantMenu";
-
+import "../index.css";
 const Grocery = lazy(() => import("./components/Grocery"))
 
 const AppLayout = () => (
